@@ -1,0 +1,8 @@
+get => Show
+post => Data Store
+put => Update
+Delete => Delete
+-----------------------
+-Item List
+-Form
+-Edit Form

@@ -1,0 +1,31 @@
+blade TE
+recources
+	views
+		Filename.blade.php
+
+.blade.php
+parent template (nayyar look=> @yield(''))
+-----------------
+	<html></html>
+
+child=>entends parent
+-------------------------
+ 	@section('')
+ 	{
+ 	---------------
+ 	---------------
+ 	---------------
+	}
+	@endsection
+
+Features
+--------------
+Route(localhost:// , http:// =>path)
+
+MVC
+---------
+View (User Layout,poor security)
+
+Controller(if data to call on view,use controller )
+
+Model(control DB[pull data/push data] Flow=>Model[data from DB]=>Controller=>View=>display webpage)

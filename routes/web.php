@@ -1,3 +1,5 @@
+
+
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -12,7 +14,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/','FrontendController@home')->name('home');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('itemdetail/{item}', 'FrontendController@itemdetail')->name('itemdetail');
+
+Route::get('cart', 'FrontendController@cart')->name('cart');
+
+Route::get('dashboard', 'BackendController@dashboard')->name('dashboard');
+
+Route::resource('items','ItemController'); //crud7
+
+Route::resource('categories','CategoryController');
+
+Route::resource('brands','BrandController');
+
+Route::resource('subcategories','SubcategoryController');
